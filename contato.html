@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JG - Distribuidora</title>
+
+    <link rel="stylesheet" href="Style/reset.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1>
+          <img
+            src="img/logocervejaatualizado.png"
+            alt="Logo Da Barbearia Alura"
+          />
+        </h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <label for="nomesobrenome"> Nome e Sobrenome: </label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          class="input-padrao"
+          required
+          placeholder="seuemail@dominio.com"
+        />
+
+        <label for="telefone">Telefone: </label>
+        <input
+          type="tel"
+          id="telefone"
+          class="input-padrao"
+          required
+          placeholder="(xx) xxxxx-xxxx"
+        />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          id="mensagem"
+          cols="70"
+          rows="10"
+          class="input-padrao"
+          required
+        ></textarea>
+
+        <fieldset>
+          <legend>Como prefere nosso contato?</legend>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              value="email"
+              id="radio-email"
+              name="contato"
+            />Email</label
+          >
+
+          <label for="radio-telefone"
+            ><input
+              type="radio"
+              value="telefone"
+              id="radio-telefone"
+              name="contato"
+            />Telefone</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              value="whatsapp"
+              id="radio-whatsapp"
+              name="contato"
+              checked
+            />WhatsApp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual horário prefere ser atendido?</legend>
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox"
+          ><input type="checkbox" checked />Gostaria de receber nossas promoções
+          por Email?</label
+        >
+
+        <input type="submit" value="Enviar formulário" class="enviar" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 18h</td>
+          </tr>
+          <tr>
+            <td>Terça</td>
+            <td>8h ~ 18h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 18h</td>
+          </tr>
+          <tr>
+            <td>Quinta</td>
+            <td>8h ~ 18h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>8h ~ 23h</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>8h ~ 23h</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>8h ~ 23h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img
+        class="imagem_facebook"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+      />
+
+      <img class="imagem_instagram" src="img/logo_instagram.png" />
+
+      <img class="logo_whatsapp" src="img/logo_whatsapp.png" />
+    </footer>
+  </body>
+</html>
